@@ -1,0 +1,1 @@
+const key: string = '3f29792e';

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./src/img/favicon.svg" type="image/x-icon">
+        <title>Lista de Filmes</title>
+
+        <link rel="stylesheet" href="./src/css/reset.css">
+        <link rel="stylesheet" href="./src/css/palette.css">
+        <link rel="stylesheet" href="./src/css/list.css">
+        <link rel="stylesheet" href="./src/css/styles.css">
+        <link rel="stylesheet" href="./src/css/modal.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="./src/libs/notie-master/dist/notie.min.css">
+        
+        <script src="./src/js/list.js" defer></script>
+        <script src="./src/js/scripts.js" defer></script>
+        <script src="./src/js/modal.js" defer></script>
+        <script src="./src/js/key.js" defer></script>
+        <script src="./src/js/notify.js" defer></script>
+        <script src="./src/js/shortcuts.js" defer></script>
+        <script src="./src/libs/notie-master/dist/notie.min.js" defer></script>
+    </head>
+    
+    <body>
+        <header>
+            <h2 class="logo"><i class="bi bi-camera-reels-fill"></i><hr>MyMovies</h2>
+
+            <div class="search-container">
+                <div class="input-wrapper">
+                    <label for="movie-name">Nome:</label>
+                    <input type="text" id="movie-name">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="movie-year">Ano:</label>
+                    <input type="number" id="movie-year" minlength="4" maxlength="4">
+                </div>
+
+                <button id="btn-search" title="Buscar"><i class="bi bi-search"></i></button>
+            </div>
+        </header>
+
+        <main>
+            <h1 class="title"></h1>
+
+            <div id="movie-list"></div>
+        </main>
+        
+        <article id="modal-overlay" class="overlay">
+            <div id="modal-background"></div>
+            <div id="modal-content">
+                <h2 id="movie-title"></h2>
+    
+                <div id="modal-main">
+                    <img id="movie-poster" src="" alt="">
+    
+                    <div id="movie-info">
+                        <h3 id="movie-plot"></h3>
+                        
+                        <div id="movie-director">
+                            <h4>Diretor:</h4>
+                            <h5></h5>
+                        </div>
+                        <div id="movie-cast">
+                            <h4>Elenco:</h4>
+                            <h5></h5>
+                        </div>
+                        <div id="movie-genre">
+                            <h4>Gênero:</h4>
+                            <h5></h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="modal-footer">
+                    <button id="btn-add"><i class="bi bi-plus-circle-fill"></i> <span>A</span>dicionar à Lista</button>
+                    <button id="btn-cancel"><i class="bi bi-x-circle-fill"></i> <span>C</span>ancelar</button>
+                </div>
+            </div>
+        </article>
+    </body>
+</html>

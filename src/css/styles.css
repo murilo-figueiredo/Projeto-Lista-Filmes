@@ -1,0 +1,80 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2.5rem;
+    background-color: var(--primary-color);
+    color: var(--lighest-color);
+    height: 80px;
+}
+
+header .logo{
+    display: flex;
+    gap: 12px;
+    cursor: default;
+    user-select: none;
+    font-size: 25px;
+}
+
+header .logo hr{
+    width: 2px;
+    background-color: currentColor;
+    border: none;
+}
+
+header .search-container{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    gap: 1rem;
+}
+
+header .search-container .input-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    align-items: center;
+    font-weight: bold;
+}
+
+header .search-container .input-wrapper:nth-child(1){
+    width: 75%;
+}
+header .search-container .input-wrapper:nth-child(2){
+    width: 20%;
+}
+
+#movie-name, #movie-year{
+    width: 100%;
+    border-radius: 7px;
+    padding: 0.3rem 0.2rem;
+    font-weight: inherit;
+}
+
+#btn-search{
+    width: 5%;
+    padding: 0.35rem;
+    border: 1px solid currentColor;
+    border-radius: 10px;
+    text-align: center;
+}
+#btn-search:hover, #btn-search:focus{
+    background-color: var(--onfocus-primary);
+}
+#btn-search:focus{
+    outline: 1px solid var(--outline-color);
+}
+
+main{
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    flex-grow: 1;
+    background-color: var(--darkest-color);
+    color: var(--light-primary);
+}
+
+main > .title{
+    font-size: 30px;
+}

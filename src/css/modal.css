@@ -1,0 +1,91 @@
+#modal-overlay{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100dvh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--primary-color);
+}
+#modal-overlay.overlay{
+    transition: all .3s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+#modal-overlay.actived{
+    visibility: visible;
+    opacity: 1;
+}
+
+#modal-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-primary);
+    opacity: .5;
+}
+
+#modal-content{
+    z-index: 1;
+    background-color: var(--lighest-color);
+    padding: 1rem 2rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    max-width: 50%;
+}
+
+#movie-title{
+    padding: 1rem 0;
+}
+
+#modal-main{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+    gap: 1rem;
+}
+
+#movie-poster{
+    max-width: 250px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+#movie-info{
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 300px;
+    gap: 1.5rem;
+}
+
+#modal-footer{
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+#btn-add, #btn-cancel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: .3rem 0;
+    font-weight: bold;
+    transition: all .2s ease-in;
+}
+#btn-add:hover, #btn-cancel:hover, #btn-add:focus, #btn-cancel:focus{
+    background-color: var(--primary-color);
+    color: var(--lighest-color);
+    box-shadow: 1px 1px 10px #000;
+}
+
+#btn-add span, #btn-cancel span{
+    text-decoration: underline;
+    margin-left: 4px;
+}
