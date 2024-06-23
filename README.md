@@ -6,7 +6,7 @@
 
  <p>O intuito deste projeto foi estudar como <strong>realizar requisições e utilizar respostas de uma API</strong>. Outro recurso estudado foi o <strong>armazenamento de dados do navegador pelo LocalStorage</strong>, utilizado para salvar a lista do usuário ao recarregar ou fechar a página.</p>
 
- <p></p>
+ <p>Este também foi um dos meus primeiros projetos utilizando TypeScript, sendo compilado em JavaScript.</p>
 
  <p>Link do projeto hospedado: <strong>https://murilo-figueiredo.github.io/Projeto-Lista-Filmes/</strong></p>
 
