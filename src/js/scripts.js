@@ -30,7 +30,7 @@ async function requestMovie() {
     try {
         movieName = returnMovieName();
         movieYear = returnMovieYear();
-        url = `http://www.omdbapi.com/?apikey=3f29792e&t=${movieName}&y=${movieYear}`;
+        url = `https://www.omdbapi.com/?apikey=3f29792e&t=${movieName}&y=${movieYear}`;
         const response = await fetch(url);
         const data = await response.json();
         if (data.Error) {
