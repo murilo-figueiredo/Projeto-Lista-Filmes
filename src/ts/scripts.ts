@@ -43,11 +43,9 @@ async function requestMovie(): Promise<void>
 {
     try
     {
-        const key: string = await getApiKey();
         movieName = returnMovieName();
         movieYear = returnMovieYear();
-        console.log('key: ', key);
-        url = `http://www.omdbapi.com/?apikey=${key}&t=${movieName}&y=${movieYear}`;
+        url = `http://www.omdbapi.com/?apikey=3f29792e&t=${movieName}&y=${movieYear}`;
         
         const response: Response = await fetch(url);
         const data: any = await response.json();

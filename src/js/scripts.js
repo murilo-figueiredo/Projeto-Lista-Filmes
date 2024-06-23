@@ -28,11 +28,9 @@ function returnMovieYear() {
 }
 async function requestMovie() {
     try {
-        const key = await getApiKey();
         movieName = returnMovieName();
         movieYear = returnMovieYear();
-        console.log('key: ', key);
-        url = `http://www.omdbapi.com/?apikey=${key}&t=${movieName}&y=${movieYear}`;
+        url = `http://www.omdbapi.com/?apikey=3f29792e&t=${movieName}&y=${movieYear}`;
         const response = await fetch(url);
         const data = await response.json();
         if (data.Error) {
